@@ -1,3 +1,4 @@
-import MainLayout from "./MainLayout"
+import MainLayout from "./MainLayout/MainLayout"
+import Container from "./Container/Container"
 
-export { MainLayout }
+export { MainLayout, Container }

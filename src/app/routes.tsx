@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         loader: servicesLoader,
       },
       {
-        path: "not-found",
+        path: "*",
         element: <NotFoundPage />,
       },
     ],

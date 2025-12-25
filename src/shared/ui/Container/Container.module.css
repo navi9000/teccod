@@ -1,0 +1,25 @@
+.container {
+  --container-padding: 12px;
+  --container-max-width: 1440px;
+  display: flex;
+  padding-inline: var(--container-padding);
+  width: 100%;
+
+  @media (min-width: 768px) {
+    --container-padding: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    --container-padding: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    --container-padding: 80px;
+  }
+}
+
+.child {
+  max-width: var(--container-max-width);
+  width: 100%;
+  margin-inline: auto;
+}

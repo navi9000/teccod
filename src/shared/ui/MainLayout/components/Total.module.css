@@ -1,0 +1,23 @@
+.total {
+  width: max-content;
+  box-shadow: 0 0 12px 4px #dddddd;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item {
+  font-weight: 700;
+}
+
+.submitbutton {
+  cursor: pointer;
+}
