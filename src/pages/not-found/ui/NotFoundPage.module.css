@@ -1,0 +1,14 @@
+.content {
+  padding-block: 12px;
+  @media (min-width: 768px) {
+    padding-block: 20px;
+  }
+}
+
+.link {
+  color: green;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
