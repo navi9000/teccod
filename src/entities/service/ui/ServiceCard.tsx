@@ -1,6 +1,7 @@
 import { useCart } from "@/app/store"
 import type { Service } from "@/shared/api"
 import type { FC } from "react"
+import styles from "./ServiceCard.module.css"
 
 const ServiceCard: FC<Service> = (service) => {
   const { add, checkById } = useCart()
@@ -9,10 +10,14 @@ const ServiceCard: FC<Service> = (service) => {
   const onClick = () => add(service)
 
   return (
-    <article>
+    <article className={styles.card}>
       <h2>{service.name}</h2>
-      <div>{service.price}р</div>
-      <button disabled={isInCart} onClick={onClick}>
+      <p className={styles.price}>{service.price}р</p>
+      <button
+        disabled={isInCart}
+        onClick={onClick}
+        className={styles.addbutton}
+      >
         {isInCart ? "Добавлено" : "Добавить"}
       </button>
     </article>

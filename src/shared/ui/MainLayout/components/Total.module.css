@@ -1,5 +1,6 @@
 .total {
   width: max-content;
+  max-width: calc(100vw - 2 * (var(--container-padding)));
   box-shadow: 0 0 12px 4px #dddddd;
   background-color: white;
   padding: 10px;

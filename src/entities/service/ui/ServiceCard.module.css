@@ -1,0 +1,28 @@
+.card {
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 8px;
+  gap: 8px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: max-content max-content 1fr;
+    align-items: center;
+  }
+}
+
+.price {
+  margin-bottom: 0.25em;
+  @media (min-width: 1024px) {
+    margin-bottom: initial;
+    margin-top: 0.25em;
+  }
+}
+
+.addbutton {
+  cursor: pointer;
+  @media (min-width: 1024px) {
+    justify-self: end;
+  }
+}
